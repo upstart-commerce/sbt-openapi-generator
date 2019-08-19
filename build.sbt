@@ -32,3 +32,14 @@ wartremoverErrors ++= Seq(
   Wart.Return,
   Wart.StringPlusAny
 )
+
+resolvers in Global += Resolver.url(
+  "upstartcommerce",
+  url("https://upstartcommerce.bintray.com/nochannel")
+)(Resolver.ivyStylePatterns)
+
+bintrayOmitLicense := true
+bintrayOrganization := Some("upstartcommerce")
+bintrayRepository := "generic"
+bintrayReleaseOnPublish in ThisBuild := false
+publishMavenStyle := false
