@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/upstart-commerce/sbt-openapi-generator.svg?branch=master)](https://travis-ci.org/upstart-commerce/sbt-openapi-generator)
 # sbt-openapi-generator
 SBT plugin for openapi-generator
 
