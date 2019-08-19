@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/upstart-commerce/sbt-openapi-generator.svg?branch=master)](https://travis-ci.org/upstart-commerce/sbt-openapi-generator)
+ [ ![Download](https://api.bintray.com/packages/upstartcommerce/generic/sbt-openapi-generator/images/download.svg) ](https://bintray.com/upstartcommerce/generic/sbt-openapi-generator/_latestVersion)
+
 # sbt-openapi-generator
 SBT plugin for openapi-generator
 
