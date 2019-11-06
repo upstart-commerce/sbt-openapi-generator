@@ -7,7 +7,7 @@ SBT plugin for openapi-generator
 # Usage 
 Add the following to your `project/plugins.sbt`:
 ```
-"org.upstartcommerce" % "sbt-openapi-generator" % "0.1-SNAPSHOT" // Or whatever the latest version is
+addSbtPlugin("org.upstartcommerce" % "sbt-openapi-generator" % "0.1-SNAPSHOT") // Use the latest version from the badge above
 ```
 and `build.sbt`:
 ```
