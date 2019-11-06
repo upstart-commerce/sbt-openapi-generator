@@ -7,6 +7,10 @@ SBT plugin for openapi-generator
 # Usage 
 Add the following to your `project/plugins.sbt`:
 ```
+resolvers += Resolver.url("Upstart Commerce", url("https://upstartcommerce.bintray.com/generic/"))(
+  Resolver.ivyStylePatterns
+)
+
 addSbtPlugin("org.upstartcommerce" % "sbt-openapi-generator" % "0.1-SNAPSHOT") // Use the latest version from the badge above
 ```
 and `build.sbt`:
