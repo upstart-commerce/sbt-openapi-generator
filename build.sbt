@@ -6,7 +6,7 @@ version := "0.1-SNAPSHOT"
 
 licenses in ThisBuild += ("Apache-2.0", url("https://bintray.com/upstartcommerce"))
 
-scalaVersion := "2.12.8"
+scalaVersion := "2.12.10"
 
 sbtPlugin := true
 logLevel := Level.Warn

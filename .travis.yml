@@ -1,15 +1,16 @@
 language: scala
 scala:
-  - 2.12.8
+  - 2.12.10
 jdk:
   - openjdk8
 script:
   - travis_wait 30 sbt ++$TRAVIS_SCALA_VERSION clean test
+  - sbt ++$TRAVIS_SCALA_VERSION scripted
 
 cache:
   directories:
     - $HOME/.sbt/boot
-    - $HOME/.sbt/0.13
+    - $HOME/.sbt/1.0
     - $HOME/.sbt/boot/scala*
     - $HOME/.sbt/cache
     - $HOME/.sbt/launchers

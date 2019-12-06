@@ -87,7 +87,7 @@ object OpenAPIGeneratorPlugin extends AutoPlugin {
     openapiHttpUserAgent.value.foreach(v => configurator.setHttpUserAgent(v))
     openapiIgnoreFileOverride.value.foreach(v => configurator.setIgnoreFileOverride(v))
     configurator.setImportMappings(openapiImportMappings.value.asJava)
-    configurator.setInputSpec(openapiInputSpec.value.getAbsolutePath)
+    configurator.setInputSpec(openapiInputSpec.value.toString)
     configurator.setInstantiationTypes(openapiInstantiationTypes.value.asJava)
     openapiInvokerPackage.value.foreach(v => configurator.setInvokerPackage(v))
     configurator.setLanguageSpecificPrimitives(openapiLanguageSpecificPrimitives.value.asJava)
