@@ -1,0 +1,3 @@
+> openapiGenerate
+$ exists "src_managed"
+$ exists "src_managed/src/main/java"

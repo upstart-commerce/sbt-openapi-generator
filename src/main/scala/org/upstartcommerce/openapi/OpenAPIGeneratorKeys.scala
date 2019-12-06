@@ -37,7 +37,7 @@ trait OpenAPIGeneratorKeys {
   lazy val openapiImportMappings = settingKey[Map[String, String]](
     "Specifies mappings between a given class and the import that should be used for that class in the format of type=import,type=import"
   )
-  lazy val openapiInputSpec = settingKey[File]("Location of the OpenAPI spec, as URL or file (required)")
+  lazy val openapiInputSpec = settingKey[URI]("Location of the OpenAPI spec, as URL or file (required)")
   lazy val openapiInstantiationTypes = settingKey[Map[String, String]](
     "Sets instantiation type mappings in the format of type=instantiatedType,type=instantiatedType. For example (in Java): array=ArrayList,map=HashMap. In other words array types will get instantiated as ArrayList in generated code"
   )
