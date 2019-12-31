@@ -26,6 +26,7 @@ The two mandatory settings are `openapiInputSpec` and `openapiGeneratorName`, SB
 | Setting | Type | Description |
 |:-------:|:----:|:-----------:|
 | openapiAdditionalProperties | Map[String, AnyRef] | Sets additional properties that can be referenced by the mustache templates in the format of name=value,name=value |
+| openapiApiNameSuffix | Option[String] | Suffix for the generated API files |
 | openapiApiPackage | Option[String] | Package for generated API classes |
 | openapiArtifactId | Option[String] | ArtifactId in generated code. This also becomes part of the generated library's filename |
 | openapiArtifactVersion | Option[String] | Artifact version in generated code. This also becomes part of the generated library's filename |
