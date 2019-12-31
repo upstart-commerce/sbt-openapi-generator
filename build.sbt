@@ -2,7 +2,6 @@ enablePlugins(SbtPlugin)
 
 organization := "org.upstartcommerce"
 name := "sbt-openapi-generator"
-version := "0.1-SNAPSHOT"
 
 licenses in ThisBuild += ("Apache-2.0", url("https://bintray.com/upstartcommerce"))
 
