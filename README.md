@@ -4,7 +4,7 @@
 # sbt-openapi-generator
 SBT plugin for openapi-generator
 
-# Usage 
+# Usage
 Add the following to your `project/plugins.sbt`:
 ```
 resolvers += Resolver.url("Upstart Commerce", url("https://upstartcommerce.bintray.com/generic/"))(
@@ -42,7 +42,7 @@ The two mandatory settings are `openapiInputSpec` and `openapiGeneratorName`, SB
 | openapiHttpUserAgent | Option[String] | HTTP user agent, e.g. codegen_csharp_api_client, default to 'OpenAPI-Generator/{packageVersion}}/{language}' |
 | openapiIgnoreFileOverride | Option[String] | Specifies an override location for the .openapi-generator-ignore file. Most useful on initial generation |
 | openapiImportMappings | Map[String, String] | Specifies mappings between a given class and the import that should be used for that class in the format of type=import,type=import |
-| openapiInputSpec | File | Location of the OpenAPI spec, as URL or file (required) |
+| openapiInputSpec | URI | Location of the OpenAPI spec, as URL or file (required) |
 | openapiInstantiationTypes | Map[String, String] | Sets instantiation type mappings in the format of type=instantiatedType,type=instantiatedType. For example (in Java): array=ArrayList,map=HashMap. In other words array types will get instantiated as ArrayList in generated code |
 | openapiInvokerPackage | Option[String] | Root package for generated code |
 | openapiLanguageSpecificPrimitives | Set[String] | Specifies additional language specific primitive types in the format of type1,type2,type3,type3. For example: String,boolean,Boolean,Double |
