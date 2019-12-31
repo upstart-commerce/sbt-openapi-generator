@@ -7,6 +7,7 @@ trait OpenAPIGeneratorKeys {
   lazy val openapiAdditionalProperties = settingKey[Map[String, AnyRef]](
     "Sets additional properties that can be referenced by the mustache templates in the format of name=value,name=value"
   )
+  lazy val openapiApiNameSuffix = settingKey[Option[String]]("Suffix for the generated API files")
   lazy val openapiApiPackage = settingKey[Option[String]]("Package for generated API classes")
   lazy val openapiArtifactId = settingKey[Option[String]](
     "ArtifactId in generated code. This also becomes part of the generated library's filename"

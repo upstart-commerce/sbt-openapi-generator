@@ -1,2 +1,5 @@
 > openapiGenerate
 $ exists "generated"
+$ exists "generated/src/main/scala/io/swagger/client/api/PetApiNameSuffix.scala"
+$ exists "generated/src/main/scala/io/swagger/client/api/StoreApiNameSuffix.scala"
+$ exists "generated/src/main/scala/io/swagger/client/api/UserApiNameSuffix.scala"

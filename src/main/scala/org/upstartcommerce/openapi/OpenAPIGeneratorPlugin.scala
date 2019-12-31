@@ -22,6 +22,7 @@ object OpenAPIGeneratorPlugin extends AutoPlugin {
   override def projectSettings: Seq[Def.Setting[_]] =
     Seq(
       openapiAdditionalProperties := Map.empty,
+      openapiApiNameSuffix := None,
       openapiApiPackage := None,
       openapiArtifactId := None,
       openapiArtifactVersion := None,
@@ -73,6 +74,7 @@ object OpenAPIGeneratorPlugin extends AutoPlugin {
       )
       .getOrElse(new CodegenConfigurator())
     configurator.setAdditionalProperties(openapiAdditionalProperties.value.asJava)
+    openapiApiNameSuffix.value.foreach(v => configurator.setApiNameSuffix(v))
     openapiApiPackage.value.foreach(v => configurator.setApiPackage(v))
     openapiArtifactId.value.foreach(v => configurator.setArtifactId(v))
     openapiArtifactVersion.value.foreach(v => configurator.setArtifactVersion(v))
