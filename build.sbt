@@ -10,7 +10,7 @@ scalaVersion := "2.12.10"
 sbtPlugin := true
 logLevel := Level.Warn
 
-val openapiGeneratorCli = "org.openapitools" % "openapi-generator-cli" % "4.2.2"
+val openapiGeneratorCli = "org.openapitools" % "openapi-generator-cli" % "4.2.3"
 libraryDependencies ++= Seq(openapiGeneratorCli)
 
 scriptedLaunchOpts += ("-Dplugin.version=" + version.value)
