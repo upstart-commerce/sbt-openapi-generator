@@ -11,7 +11,7 @@ resolvers += Resolver.url("Upstart Commerce", url("https://upstartcommerce.bintr
   Resolver.ivyStylePatterns
 )
 
-addSbtPlugin("org.upstartcommerce" % "sbt-openapi-generator" % "0.1.1") // Use the latest version from the badge above
+addSbtPlugin("org.upstartcommerce" % "sbt-openapi-generator" % "0.1.2") // Use the latest version from the badge above
 ```
 and `build.sbt`:
 ```
