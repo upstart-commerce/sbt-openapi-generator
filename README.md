@@ -18,7 +18,7 @@ and `build.sbt`:
 enablePlugins(OpenAPIGeneratorPlugin)
 ```
 
-Set `openapiInputSpec` setting to point to your OpenAPI specification file and `openapiGeneratorName` for a desired generator (list of supported generators is available [here](https://openapi-generator.tech/docs/generators)). Sources can then be generated using `generate` task.
+Set `openapiInputSpec` setting to point to your OpenAPI specification file and `openapiGeneratorName` for a desired generator (list of supported generators is available [here](https://openapi-generator.tech/docs/generators)). Sources can then be generated using `openapiGenerate` task.
 
 # Available settings
 The two mandatory settings are `openapiInputSpec` and `openapiGeneratorName`, SBT will complain if you don't provide those. All the other setting keys are optional or have defaults.
